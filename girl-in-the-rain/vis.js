@@ -5,7 +5,7 @@ window.addEventListener('load', _ => {
         //num which is not in brackets must be same as padding.
         widht: (window.innerWidth / 128) - 4,
         //max height of bars
-        height: 125,
+        height: 300,
         //distance between bars
         padding: 4
     }
@@ -25,7 +25,7 @@ window.addEventListener('load', _ => {
         for (const [i, part] of audio.entries()) {
             const x = (i * bar.widht) + ((i + 1) * bar.padding) - (bar.padding / 2)
             const y = 525
-            context.fillRect(x, y, bar.widht, (bar.height * -part) * 2.3)
+            context.fillRect(x, y, bar.widht, bar.height * -part)
         }
         requestAnimationFrame(draw)
     }                   
