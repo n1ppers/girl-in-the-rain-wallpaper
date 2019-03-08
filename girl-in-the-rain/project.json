@@ -1,0 +1,25 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "I actually tried :/\n\nSo, that's a web-based wallpaper.\nAnd, it's on GitHub, so you can change something if you want.\n\nGitHub: https://github.com/n1ppers/girl-in-the-rain-wallpaper",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.19607843137254902 0.4392156862745098 0.7137254901960784"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Anime" ],
+	"title" : "Girl in the rain | with Audio Visualizer",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "1676874831"
+}
