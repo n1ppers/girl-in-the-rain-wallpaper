@@ -1,17 +1,55 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "I actually tried :/\r\n\r\nWallpaper preview: https://www.youtube.com/watch?v=enWsyueR_Vo\r\n\r\nSo, that's a web-based wallpaper with Audio Visualizer.\r\nAnd, it's on GitHub, so you can change something if you want.\r\n\r\nGitHub: https://github.com/n1ppers/girl-in-the-rain-wallpaper\r\n\r\nBtw, i know, visualizer animation is pretty bad.",
+	"description" : "I actually tried :/\n\nWallpaper preview: https://www.youtube.com/watch?v=enWsyueR_Vo\n\nSo, that's a web-based wallpaper with Audio Visualizer.\nAnd, it's on GitHub, so you can change something if you want.\n\nGitHub: https://github.com/n1ppers/girl-in-the-rain-wallpaper\n\nBtw, i know, visualizer animation is pretty bad.",
 	"file" : "index.html",
 	"general" : 
 	{
 		"properties" : 
 		{
+			"barh" : 
+			{
+				"condition" : "vis.value==true",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 102,
+				"text" : "Bars Height",
+				"type" : "slider",
+				"value" : 30
+			},
+			"barpadding" : 
+			{
+				"condition" : "vis.value==true",
+				"editable" : false,
+				"fraction" : false,
+				"max" : 12,
+				"min" : 1,
+				"order" : 103,
+				"text" : "Bars Width",
+				"type" : "slider",
+				"value" : 4
+			},
 			"schemecolor" : 
 			{
-				"order" : 0,
+				"order" : 4,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0.19607843137254902 0.4392156862745098 0.7137254901960784"
+			},
+			"vis" : 
+			{
+				"order" : 100,
+				"text" : "Audio Visualizer",
+				"type" : "bool",
+				"value" : true
+			},
+			"viscolor" : 
+			{
+				"condition" : "vis.value==true",
+				"order" : 101,
+				"text" : "Bars Color",
+				"type" : "color",
+				"value" : "0.6470588235294118 0.6470588235294118 0.9215686274509804"
 			}
 		},
 		"supportsaudioprocessing" : true
