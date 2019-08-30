@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "I actually tried :/\n\nWallpaper preview: https://www.youtube.com/watch?v=enWsyueR_Vo\n\nSo, that's a web-based wallpaper with Audio Visualizer.\nAnd, it's on GitHub, so you can change something if you want.\n\nGitHub: https://github.com/n1ppers/girl-in-the-rain-wallpaper\n\nBtw, i know, visualizer animation is pretty bad.",
+	"description" : "I actually tried :/\n\nWallpaper preview: https://www.youtube.com/watch?v=enWsyueR_Vo\n\nSo, that's a web-based wallpaper with Audio Visualizer.\nAnd, it's on GitHub, so you can change something if you want.\n\nGitHub: https://github.com/n1ppers/girl-in-the-rain-wallpaper\n\nBtw, i know, visualizer animation is pretty bad.\n\n2019.08.30 Update:\n- Added WIP features:\n - Smooth\n - Channel reverse",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -29,12 +29,55 @@
 				"type" : "slider",
 				"value" : 4
 			},
+			"reverse" : 
+			{
+				"condition" : "vis.value==true && wipfeatures.value==true",
+				"options" : 
+				[
+					{
+						"label" : "Disabled",
+						"value" : 0
+					},
+					{
+						"label" : "Right",
+						"value" : 1
+					},
+					{
+						"label" : "Left",
+						"value" : 2
+					}
+				],
+				"order" : 107,
+				"text" : "Reverse channel",
+				"type" : "combo",
+				"value" : 0
+			},
 			"schemecolor" : 
 			{
 				"order" : 4,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0.19607843137254902 0.4392156862745098 0.7137254901960784"
+			},
+			"sfactor" : 
+			{
+				"condition" : "vis.value==true && wipfeatures.value==true && smooth.value==true",
+				"editable" : false,
+				"fraction" : false,
+				"max" : 25,
+				"min" : 3,
+				"order" : 106,
+				"text" : "Smooth Factor",
+				"type" : "slider",
+				"value" : 15
+			},
+			"smooth" : 
+			{
+				"condition" : "vis.value==true && wipfeatures.value==true",
+				"order" : 105,
+				"text" : "Smooth",
+				"type" : "bool",
+				"value" : false
 			},
 			"vis" : 
 			{
@@ -50,6 +93,14 @@
 				"text" : "Bars Color",
 				"type" : "color",
 				"value" : "0.6470588235294118 0.6470588235294118 0.9215686274509804"
+			},
+			"wipfeatures" : 
+			{
+				"condition" : "vis.value==true",
+				"order" : 104,
+				"text" : "Use WIP features",
+				"type" : "bool",
+				"value" : false
 			}
 		},
 		"supportsaudioprocessing" : true
